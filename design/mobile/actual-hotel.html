@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>Actual Hotel</title>
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+      #interactive.viewport {position: relative; width: 100%; height: auto; overflow: hidden; text-align: center;}
+      #interactive.viewport > canvas, #interactive.viewport > video {max-width: 100%;width: 100%;}
+      canvas.drawing, canvas.drawingBuffer {position: absolute; left: 0; top: 0;}
+  </style>
+
+  <body>
+  <div class="login-screen">
+    <div class="container">
+      <div class="row p-4">
+      <div class="col-lg-12 col-md-12 col-12 mb-5">
+        <a href=""><img class="" src="assets/img/login-scr-logo.png" alt="" /></a>
+      </div>
+      <div class="col-lg-12 col-md-12 col-12">
+        <h4 class="title">Actual Hotel</h4>
+        <div class="sub-title mb-3">Please fill out the form below and click submit.</div>
+        <div class="form-box">
+          <form action="" method="post">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <div class="form-group">
+                  <label>Voucher No</label>
+                  <input type="text" class="form-control custom-form-control" placeholder="123456" required="required">
+                </div>
+              </div>           
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>Checkin Date</label>
+                <input type="date" class="form-control custom-form-control" placeholder="Email" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>No of Beds</label>
+                <select class="form-control custom-form-control" required>
+                  <option>Select Beds</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>         
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>Actual Beds</label>
+                <select class="form-control custom-form-control" required>
+                  <option>Select Beds</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>         
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>No of Room</label>
+                <select class="form-control custom-form-control" required>
+                  <option>Select</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>         
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>Actual Beds (Room)</label>
+                <select class="form-control custom-form-control" required>
+                  <option>Select</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>         
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>Actual Hotel</label>
+                <select class="form-control custom-form-control" required>
+                  <option>Same As Hotel Package</option>
+                  <option>Same As Hotel Package</option>
+                  <option>Same As Hotel Package</option>
+                  <option>Same As Hotel Package</option>
+                  <option>Same As Hotel Package</option>
+                  <option>Same As Hotel Package</option>
+                </select>         
+              </div>
+            </div>            
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>Checkout Date</label>
+                <input type="date" class="form-control custom-form-control" placeholder="Email" required="required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>BRN / Cash</label>
+                <select class="form-control custom-form-control" required>
+                  <option>Select</option>
+                  <option>Cash</option>
+                  <option>Online</option>
+                </select>         
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form-group">
+                <label>Package Hotel</label>
+                <select class="form-control custom-form-control" required>
+                  <option>Select Package</option>
+                  <option>Select Package</option>
+                  <option>Select Package</option>
+                  <option>Select Package</option>
+                  <option>Select Package</option>
+                </select>         
+              </div>
+            </div>
+            </div>
+            <div class="form-group"><input type="submit" class="btn btn-primary btn-block" value="Submit"></div>
+          </form>
+        </div>
+        <div class="alert alert-success" role="alert">
+          <i class="fa fa-check" aria-hidden="true"></i> <strong>Well Done!</strong> Your form has been submitted successfully.
+        </div>
+      </div>
+      <div class="col-lg-12 mt-3">
+        <h4 class="title">Pilgrams Grid</h4>
+        <div class="table-responsive">                
+          <table id="mytable" class="table table-bordred table-striped">                   
+            <thead>
+              <th>#</th>
+              <th>Pilgram ID</th>
+              <th>Pilgram Name</th>
+              <th>Passport No</th>
+              <th>Package Hotel</th>
+              <th>Actual Hotel</th>
+              <th>Accommodation</th>
+              <th>Actual Arrival Time</th>
+              <th>Room Number</th>
+              <th>Actual No of Bed</th>
+              <th>Checkin Date</th>
+              <th>Checkout Date</th>
+            </thead>
+            <tbody>    
+              <tr>
+                <td>1</td>
+                <td><a href="">UF/P/0009257</a></td>
+                <td>Shahzad Mansoor</td>
+                <td>RM3115001</td>
+                <td>Anjum Hotel</td>
+                <td>Anjum Hotel</td>
+                <td>Room</td>
+                <td>15:52</td>
+                <td>202</td>
+                <td>2</td>
+                <td>03 Jan, 2022</td>
+                <td>12 Jan, 2022</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="">UF/P/0009257</a></td>
+                <td>Shahzad Mansoor</td>
+                <td>RM3115001</td>
+                <td>Anjum Hotel</td>
+                <td>Anjum Hotel</td>
+                <td>Room</td>
+                <td>15:52</td>
+                <td>202</td>
+                <td>2</td>
+                <td>03 Jan, 2022</td>
+                <td>12 Jan, 2022</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><a href="">UF/P/0009257</a></td>
+                <td>Shahzad Mansoor</td>
+                <td>RM3115001</td>
+                <td>Anjum Hotel</td>
+                <td>Anjum Hotel</td>
+                <td>Room</td>
+                <td>15:52</td>
+                <td>202</td>
+                <td>2</td>
+                <td>03 Jan, 2022</td>
+                <td>12 Jan, 2022</td>
+              </tr>    
+            </tbody>
+          </table>                
+        </div>
+            <div class="clearfix"></div>
+          <nav aria-label="" class="mt-4">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="sticky-footer">
+    <div id="mySidepanel" class="sidepanel">
+      <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</div>
+      <a href="allow-hotel.html">Allow Hotel</a>
+      <a href="allow-transport.html">Allow Transport</a>
+      <a href="actual-hotel.html">Actual Hotel</a>
+      <a href="actual-transport.html">Actual Transport</a>
+    </div>
+
+
+
+
+    <!-- Bootstrap Bereich -->
+
+    <input type="file" accept="image/*;capture=camera" capture="camera" class="hidden" />
+
+
+
+
+    <div class="container control">
+      <div class="row">
+        <!--<div class="col-lg-4 col-4">
+          <i class="fa fa-user" aria-hidden="true"></i> Profile
+        </div>-->
+        <div class="col-lg-4 col-4 p-1">
+          <button class="openbtn" onclick="openNav()"><i class="fa fa-check" aria-hidden="true"></i> Activities</button>
+        </div>
+        <div class="col-lg-4 col-4 pt-1 barcode">
+          <button class="openbtn"><i class="fa fa-barcode" aria-hidden="true"></i> Scan Barcode</button>
+        </div>
+        <div class="col-lg-4 col-4 p-1">
+          <button class="openbtn"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/quagga.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#example').dataTable( {
+            "sScrollX": "100%",
+            "sScrollXInner": "110%",
+            "bScrollCollapse": true
+        } );
+      } );
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidepanel").style.width = "200px";
+      }
+      function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+      }
+    </script>
+    <script type="text/javascript">
+    $(function() {
+      // Create the QuaggaJS config object for the live stream
+      var liveStreamConfig = {
+          inputStream: {
+            type : "LiveStream",
+            constraints: {
+              width: {min: 640},
+              height: {min: 480},
+              aspectRatio: {min: 1, max: 100},
+              facingMode: "environment" // or "user" for the front camera
+            }
+          },
+          locator: {
+            patchSize: "medium",
+            halfSample: true
+          },
+          numOfWorkers: (navigator.hardwareConcurrency ? navigator.hardwareConcurrency : 4),
+          decoder: {
+            "readers":[
+              {"format":"ean_reader","config":{}}
+            ]
+          },
+          locate: true
+        };
+      // The fallback to the file API requires a different inputStream option. 
+      // The rest is the same 
+      var fileConfig = $.extend(
+          {}, 
+          liveStreamConfig,
+          {
+            inputStream: {
+              size: 800
+            }
+          }
+        );
+      // Start the live stream scanner when the modal opens
+      $('#livestream_scanner').on('shown.bs.modal', function (e) {
+        Quagga.init(
+          liveStreamConfig, 
+          function(err) {
+            if (err) {
+              $('#livestream_scanner .modal-body .error').html('<div class="alert alert-danger"><strong><i class="fa fa-exclamation-triangle"></i> '+err.name+'</strong>: '+err.message+'</div>');
+              Quagga.stop();
+              return;
+            }
+            Quagga.start();
+          }
+        );
+        });
+      
+      // Make sure, QuaggaJS draws frames an lines around possible 
+      // barcodes on the live stream
+      Quagga.onProcessed(function(result) {
+        var drawingCtx = Quagga.canvas.ctx.overlay,
+          drawingCanvas = Quagga.canvas.dom.overlay;
+     
+        if (result) {
+          if (result.boxes) {
+            drawingCtx.clearRect(0, 0, parseInt(drawingCanvas.getAttribute("width")), parseInt(drawingCanvas.getAttribute("height")));
+            result.boxes.filter(function (box) {
+              return box !== result.box;
+            }).forEach(function (box) {
+              Quagga.ImageDebug.drawPath(box, {x: 0, y: 1}, drawingCtx, {color: "green", lineWidth: 2});
+            });
+          }
+     
+          if (result.box) {
+            Quagga.ImageDebug.drawPath(result.box, {x: 0, y: 1}, drawingCtx, {color: "#00F", lineWidth: 2});
+          }
+     
+          if (result.codeResult && result.codeResult.code) {
+            Quagga.ImageDebug.drawPath(result.line, {x: 'x', y: 'y'}, drawingCtx, {color: 'red', lineWidth: 3});
+          }
+        }
+      });
+      
+      // Once a barcode had been read successfully, stop quagga and 
+      // close the modal after a second to let the user notice where 
+      // the barcode had actually been found.
+      Quagga.onDetected(function(result) {        
+        if (result.codeResult.code){
+          $('#scanner_input').val(result.codeResult.code);
+          Quagga.stop();  
+          setTimeout(function(){ $('#livestream_scanner').modal('hide'); }, 1000);      
+        }
+      });
+        
+      // Stop quagga in any case, when the modal is closed
+        $('#livestream_scanner').on('hide.bs.modal', function(){
+          if (Quagga){
+            Quagga.stop();  
+          }
+        });
+      
+      // Call Quagga.decodeSingle() for every file selected in the 
+      // file input
+      $("#livestream_scanner input:file").on("change", function(e) {
+        if (e.target.files && e.target.files.length) {
+          Quagga.decodeSingle($.extend({}, fileConfig, {src: URL.createObjectURL(e.target.files[0])}), function(result) {alert(result.codeResult.code);});
+        }
+      });
+    });
+    </script>
+  </body>
+</html>

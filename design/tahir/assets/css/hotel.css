@@ -1,0 +1,57 @@
+body{font-family: Montserrat;}
+.main-title{font-size:30PX;font-weight: 600;color: black;}
+.hotel-sal-count{background: white;border: none;box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.15);
+-webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.15);
+-moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.15);display: flow-root; border-radius: 6px;}
+.hotel-sal-count .title{color: black;font-size: 18px;font-weight: 600;}
+.hotel-sal-count .price{color: #d2d2d2;font-size: 35px;font-weight: 600;}
+.hotel-sal-count .red-box{background: #c53b5c; width: 15px;height: 15px;border-radius: 5px;float: right;}
+.hotel-sal-count .green-box{background: #0e9d76; width: 15px;height: 15px;border-radius: 5px;float: right;}
+.hotel-sal-count .yellow-box{background: #dea41f; width: 50px;height: 15px;border-radius: 5px;float: right;}
+.card{background: white;border: none;}
+.select-count{border:solid 1px #d0d0d0;border-radius: 4px;font-size: 12px}
+#SvgjsPath1017{  background-color: red!important;}
+.fa-star{color: #ebb30a;font-size: 10px;}
+.hotel-rating{font-size: 22px;}
+.nopadding {padding: 0 !important;margin: 0 !important;}
+.blue-lte-circle{width: 8px; height: 8px; background: #55c1e8; border-radius: 50px;}
+.purple-lte-circle{width: 8px; height: 8px; background: #7a27fb; border-radius: 50px;}
+.yellow-lte-circle{width: 8px; height: 8px; background: #eab40a; border-radius: 50px;}
+.orange-lte-circle{width: 8px; height: 8px; background: #f75e60; border-radius: 50px;}
+.green-lte-circle{width: 8px; height: 8px; background: #109910; border-radius: 50px;}
+.pink-lte-circle{width: 8px; height: 8px; background: #df10e1; border-radius: 50px;}
+.gray-lte-circle{width: 8px; height: 8px; background: #777e7c; border-radius: 50px;}
+.for-height{height: 363px;}
+
+/* Tickst css */
+.status-det{font-size: 12px;color: #d2d2d2;}
+
+/* main dashbaord css */
+.furs-main-title{font-size: 16px;font-weight: 500;color: black;}
+.sub-title{font-size:30PX;font-weight: 600;color: black;}
+
+ 
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.for-height{height: auto;}
+
+}
+
+@media (max-width: 767px) {
+
+
+}
+
+@media (max-width: 575.98px) {
+
+}
+@media (max-width: 360px){
+	}
+
+@media (max-width: 320px){
+
+}

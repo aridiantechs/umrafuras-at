@@ -1,0 +1,77 @@
+body{font-family: Montserrat; color:#222529; font-size: 13px;}
+.loading-bg{background: #222529;}
+.loading-screen{width: 50%;margin:0 auto;}
+.loading-screen img{margin-top: 200px;}
+.login-screen{width: 100%;margin:0 auto;}
+.login-screen .title{}
+.login-screen .sub-title{color: #b8b8b8;}
+.login-screen .sub-title span{color: #1d92ff;}
+.login-form label{font-size: 12px;color: #4f5359;}
+.login-form input{font-size: 12px;color: #8f9195;font-weight: 500;width: 100%;height: 45px;border-radius: 4px;border: solid 1px #b3b3b3;padding-left: 10px;}
+.login-form select{font-size: 12px;color: #8f9195;font-weight: 500;width: 100%;height: 45px;border-radius: 4px;border: solid 1px #b3b3b3;padding-left: 10px;}
+.for-pass-pict{position: relative;}
+.for-pass-pict img{position: absolute;right: 13px;top: 41px;}
+.login-btn button{border: none;background: #dda420;color: white;border-radius: 4px;}
+.login-screen a{color: #1d92ff;}
+.datepicker table{width: 100%;}
+.datepicker{width: auto;}
+.field-icon {float: right;margin-left: -25px;margin-top: -31px;position: relative;z-index: 2;}
+.fa-fw {width: 2.285714em;text-align: center;color: #b2b2b2;}
+.submit-scr .title{font-size:20px;color: #dda420;font-weight: 500; }
+.submit-scr .sub-title{font-size:18px;font-weight: 300;}
+
+.form-box .form-group {position: relative;}
+.form-box i {position: absolute;left: 13px;top: 13px;font-size: 18px;}
+.form-box .form-control {padding-left: 38px;}
+.form-box .custom-form-control{ padding-left: 12px; }
+.form-box .form-control:focus {
+  border-color: #dda420;
+}
+.form-box.form-control, .form-box .btn {
+  min-height: 40px;
+  border-radius: 3px; 
+}
+.form-box .hint-text {
+  text-align: center;
+  padding-top: 10px;
+}
+.form-box .close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.form-box .btn { background: #dda420; border: none; line-height: normal;}
+.form-box .btn:hover, .form-box .btn:focus { background: #dda420;  }
+.form-control{padding: 0.7rem 0.75rem; font-size: 0.90rem; line-height: 45px!important; height: 45px; border: 1px solid #a9b1b9;}
+select.form-control:not([size]):not([multiple]){height: 45px!important;}
+.table thead th{color: #d8a829;}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{background-color: #d8a829!important;}
+.table-striped tbody tr:nth-of-type(odd) {background-color: rgba(0,0,0,.03);}
+.pagination{}
+.sticky-footer {position: fixed;left: 0;bottom: 0;width: 100%;z-index: 999; text-align: center; color: #fff; font-size: 12px;}
+.sticky-footer .control{background: #212834;}
+.sticky-footer .control .fa{display: block; font-size: 17px;}
+
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.42);
+-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.42);
+-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.42);
+text-align: left;
+}
+.sidepanel a {width: 100%; padding: 8px 8px 8px 15px;text-decoration: none;font-size: 16px;color: #222529;display: inline-block;transition: 0.3s; border-bottom: solid 1px #e3e3e3;}
+.sidepanel a:hover {color: #f1f1f1;}
+.sidepanel .closebtn {position: absolute;top: 0;right: 25px;font-size: 36px; color: #222529; cursor: pointer;}
+.openbtn {cursor: pointer;color: white;border: none;background: transparent;}
+.openbtn:hover {}
+.barcode{background: #333a4b;}

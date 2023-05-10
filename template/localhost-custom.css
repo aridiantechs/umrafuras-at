@@ -1,0 +1,165 @@
+.btn_customized , .btn-success{
+    background-color: #dda420;
+    border: #dda420;
+
+}
+
+.btn_customized:hover , .btn-success:hover{
+    background-color: #dda420;
+
+}
+
+.chart-select {
+    font-size: 85%;
+    padding: 5px;
+    height: 33px;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+#FilterButtons
+{
+    margin-top: 37px;
+}
+#SalesCommentsFilterButtons
+{
+    margin-top: 25px;
+}
+
+#PilgrmStatusGrid {
+    overflow: auto;
+    max-height: 415px;
+}
+
+.as-footer-container {
+    margin-top: 20px;
+}
+
+#coloredtext {
+    color: #DDA420;
+}
+
+.grid-img i {
+    color: red;
+    font-size: 22px;
+    position: relative;
+    float: right;
+}
+
+.grid-img {
+    width: 120px;
+    height: 100px;
+    background-size: cover;
+    float: left;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dt-filter-btn {
+    background-color: #dda420;
+    padding: 11px 16px;
+    text-shadow: none;
+    font-size: 16px;
+    color: #3b3f5c;
+    margin: 0 0 0 5px;
+    font-weight: lighter;
+}
+
+#status_row {
+    color: #dda420;
+}
+
+a {
+    cursor: pointer;
+}
+
+#agent_details label {
+    color: #dda420;
+}
+
+.transactions-list .btn {
+    padding: 2px 5px;
+}
+
+
+#CaptchaText {
+
+    float: right;
+    color: #dda420;
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    border: 1px solid #dda420 !important;
+}
+
+.modal-content .modal-footer .btn.btn-primary {
+    background-color: #dda420 !important;
+    border: 1px solid #dda420 !important;
+}
+
+.modal-content .modal-footer button.btn[data-dismiss="modal"] {
+    color: #dda420 !important;
+}
+
+.modal-content .modal-header svg{
+    color: #dda420 !important;
+    width: 25px !important;
+}
+
+.modal-content .modal-header{
+    border: 1px solid #dda420;
+}
+.widget-five .w-content div .task-left{
+    background-color: #dda420 !important;
+    color: #FFF !important;
+}
+
+.datatableparentdiv .dataTables_scrollBody{
+    min-height: 300px;
+}
+
+
+
+/*.loader {*/
+/*    border: 16px solid #F1F2F3;*/
+/*    border-radius: 50%;*/
+/*    border-top: 16px solid #DDA420;*/
+/*    width: 120px;*/
+/*    height: 120px;*/
+/*    -webkit-animation: spin 2s linear infinite; !* Safari *!*/
+/*    animation: spin 2s linear infinite;*/
+/*}*/
+
+/*!* Safari *!*/
+/*@-webkit-keyframes spin {*/
+/*    0% { -webkit-transform: rotate(0deg); }*/
+/*    100% { -webkit-transform: rotate(360deg); }*/
+/*}*/
+
+/*@keyframes spin {*/
+/*    0% { transform: rotate(0deg); }*/
+/*    100% { transform: rotate(360deg); }*/
+/*}*/
+
+
+
+/*sales  activity lead css*/
+/*Sales Lead Activity css*/
+.checkbox-alignment {
+    padding-left: 0px !important;
+}
+
+.details-table {
+    border-radius: 10px 10px;
+}
+.btn-green{
+    background: #0c4128;
+    color: #fff;
+}
+.btn-green:hover{
+    color:#fff;
+}

@@ -1,0 +1,37 @@
+ATE pg_catalog."default",
+	    "LinkedlnLearningResources" character varying(155) COLLATE pg_catalog."default",
+	    "YoutubeEmbeddedVideo" character varying(155) COLLATE pg_catalog."default",
+	    "GoogleDriveLink" character varying(155) COLLATE pg_catalog."default",
+	    "DueDate" date,
+	    "DomainID" bigint,
+	    "Archive" smallint DEFAULT 0,
+	    CONSTRAINT "TrainingTopic_pkey" PRIMARY KEY ("UID")
+	)
+	
+	TABLESPACE pg_default;
+2022-12-21 10:28:20.674 PKT [14900] ERROR:  relation "TrainingTopicsQuestions_UID_seq" already exists
+2022-12-21 10:28:20.674 PKT [14900] STATEMENT:  
+	
+	
+	CREATE SEQUENCE sales."TrainingTopicsQuestions_UID_seq"
+	    INCREMENT 1
+	    START 1
+	    MINVALUE 1
+	    MAXVALUE 9223372036854775807
+	    CACHE 1;
+2022-12-21 10:28:20.675 PKT [14900] ERROR:  relation "TrainingTopicsQuestions" already exists
+2022-12-21 10:28:20.675 PKT [14900] STATEMENT:  
+	
+	
+	CREATE TABLE sales."TrainingTopicsQuestions"
+	(
+	    "UID" bigint NOT NULL DEFAULT nextval('sales."TrainingTopicsQuestions_UID_seq"'::regclass),
+	    "SystemDate" timestamp without time zone,
+	    "TopicID" bigint,
+	    "QuestionName" text COLLATE pg_catalog."default",
+	    "RightAnswer" character varying COLLATE pg_catalog."default",
+	    "Archive" smallint DEFAULT 0,
+	    CONSTRAINT "TrainingTopicsQuestions_pkey" PRIMARY KEY ("UID")
+	)
+	
+	T

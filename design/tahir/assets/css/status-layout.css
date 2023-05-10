@@ -1,0 +1,47 @@
+.custom-table {}
+.custom-table tr{color: #fff;}
+.custom-table tr:hover{color: #fff!important;}
+.padding-0{padding: 0px!important;}
+.b-none-align{border-top: none!important;}
+
+
+
+/***.custom-table.custom-table-hover tbody tr{color: #fff;}***/
+
+ 
+@media (max-width: 1440px) {
+}
+@media (max-width: 1024px) {
+
+
+
+
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+
+
+
+}
+
+@media (max-width: 767px) {
+
+
+
+
+}
+
+@media (max-width: 575.98px) {
+   
+
+
+
+}
+@media (max-width: 360px){
+	}
+
+@media (max-width: 320px){
+
+}

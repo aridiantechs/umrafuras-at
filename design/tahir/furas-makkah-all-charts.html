@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Farrus Makkah main Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <link href="assets/css/loader.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/loader.js"></script>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/umrahfuras-dashboard.css">
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- VENDOR CSS -->
+
+
+    <link rel="stylesheet" href="assets/vendor/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+    <link rel="stylesheet" href="assets/vendor/toastr/toastr.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/hotel.css">
+    <link rel="stylesheet" href="assets/css/furas-makkah-all-charts.css">    
+    <link rel="stylesheet" href="assets/css/my-task-style.css">    
+    <link rel="stylesheet" href="assets/css/color_skins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- END YEAR WISE SALE GRAPH -->
+   
+
+    <!-- Total Visitor, Uniquer Visitor. Old Visitor, Confirm Visitor CSS -->
+
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-material-icons.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-material-icons.rtl.css" rel="stylesheet">
+
+    <!-- Total Visitor, Uniquer Visitor. Old Visitor, Confirm Visitor CSS END -->
+
+
+</head>
+<body class="alt-menu sidebar-noneoverflow flow_xy">
+<!--  BEGIN MAIN CONTAINER  -->
+<div class="main-container sidebar-closed sbar-open" id="container">
+
+    <!--  BEGIN CONTENT AREA  -->
+    <div id="content" class="main-content">
+        <div class="layout-px-spacing">
+            <div class="analytics">
+                <div class="furs-main-title pb-5">Welcome to “Furas Makkah” <img class="float-right" src="assets/img/bismALLAH-hotel.png"> </div>
+                <div class="sub-title pb-4">Umrah</div>
+                <div class="row mb-5">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card card-group-row__card hotel-sal-count">
+                            <div class="header">
+                                <div class="frush-sub-title">Country Wise Sale</div>
+                                <ul class="header-dropdown">
+                                    <!--<li><a class="tab_btn" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Weekly">W</a></li>
+                                    <li><a class="tab_btn" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Monthly">M</a></li>
+                                    <li><a class="tab_btn active" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Yearly">Y</a></li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                        <ul class="dropdown-menu dropdown-menu-right animated bounceIn">
+                                            <li><a href="javascript:void(0);">Action</a></li>
+                                            <li><a href="javascript:void(0);">Another Action</a></li>
+                                            <li><a href="javascript:void(0);">Something else</a></li>
+                                        </ul>
+                                    </li>-->
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <div id="Salary_Statistics" class="chartist"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="body">
+                                <h5 class="frush-sub-title">Total Pilgram</h5>
+                                <div class="text-center">
+                                <div class="sparkline-pie m-t-20">6,4,8</div>
+                                <div class="stats-report m-b-30">
+                                    <div class="stat-item">
+                                    <h5 class="sub-text">Total Pax</h5>
+                                    <b class="col-black">84.60%</b></div>
+                                    <div class="stat-item">
+                                    <h5 class="sub-text">Enter</h5>
+                                    <b class="col-black">15.40%</b></div>
+                                    <div class="stat-item">
+                                    <h5 class="sub-text">Exit</h5>
+                                    <b class="col-black">5.10%</b></div>
+                                    <div class="stat-item">
+                                    <h5 class="sub-text">In KSA</h5>
+                                    <b class="col-black">5.10%</b></div>
+                                    <div class="stat-item">
+                                    <h5 class="sub-text">In Process</h5>
+                                    <b class="col-black">5.10%</b></div>
+                                </div>
+                                <span id="sparkline-compositeline">8,4,0,0,0,0,1,4,4,10,10,10,10,0,0,0,4,6,5,9,10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-title pb-4">Hotel</div>
+                <div class="row card-group-row">
+                    <div class="col-lg-6 col-md-12 col-12 card-group-row__col">
+                        <div class="card card-group-row__card hotel-sal-count">
+                            <div class="row p-4">
+                                <div class="col-lg-8 col-md-8 col-6">
+                                    <div class="title">Country Wise</div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex align-items-center" style="height: 250px;">
+                                <div class="chart w-100" style="height: calc(250px - 1.25rem * 2);">
+                                    <canvas id="bar-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="col-lg-6 col-md-12 col-12 mt-lg-0 mt-md-5 mt-5">
+                                <div class="pb-0 hotel-sal-count">
+                                    <div class="card-body">
+                                    <div class="row pb-4">
+                                        <div class="col-lg-8 col-md-8 col-6">
+                                            <div class="title">Category Wise</div>
+                                        </div>
+                                    </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-6 col-sm-12 col-6">
+                                                <div id="CategorySaleDonatChart"></div>
+                                            </div>
+                                             <div class="col-lg-12 col-md-6 col-sm-12 col-6 p-sm-0 m-sm-0">
+                                                <div class="justify-content-between">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-3">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                    <div class="blue-lte-circle"></div>
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                    <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                    2,512</h4>
+                                                                    <img class="" src="assets/img/5-star.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-3">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                    <div class="purple-lte-circle"></div>
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                    <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                    456</h4>
+                                                                    <img class="" src="assets/img/4-star.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-3 mt-lg-4 mt-md-4 mt-0">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                    <div class="yellow-lte-circle"></div>
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                    <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                    951</h4>
+                                                                    <img class="" src="assets/img/3-star.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-3 mt-lg-4 mt-md-4 mt-0">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                    <div class="pink-lte-circle"></div>
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                    <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                    157</h4>
+                                                                    <img class="" src="assets/img/2-star.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-3 mt-lg-4 mt-md-4 mt-2">
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                <div class="green-lte-circle"></div>
+                                                            </div>
+                                                            <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                345</h4>
+                                                                <img class="" src="assets/img/1-star.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>                                                    
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="sub-title pb-4">Hotel</div>
+                <div class="row card-group-row">
+                    <div class="col-lg-6 col-md-12 col-12 card-group-row__col">
+                        <div class="card card-group-row__card hotel-sal-count">
+                            <div class="row p-4">
+                                <div class="col-lg-8 col-md-8 col-6">
+                                    <div class="title">Category Wise Sale</div>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex align-items-center" style="height: 250px;">
+                                <div class="chart w-100" style="height: calc(250px - 1.25rem * 2);">
+                                    <canvas id="genderChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="col-lg-6 col-md-12 col-12 mt-lg-0 mt-md-5 mt-5">
+                                <div class="pb-0 hotel-sal-count">
+                                    <div class="card-body">
+                                    <div class="row pb-4">
+                                        <div class="col-lg-8 col-md-8 col-6">
+                                            <div class="title">Category Wise</div>
+                                        </div>
+                                    </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 col-6">
+                                                <div class="justify-content-between">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-3">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                    <div class="blue-lte-circle"></div>
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                    <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                    2,512</h4>
+                                                                    <img class="" src="assets/img/5-star.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-3">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                    <div class="purple-lte-circle"></div>
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                    <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                    456</h4>
+                                                                    <img class="" src="assets/img/4-star.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-3 mt-lg-4 mt-md-4 mt-0">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                    <div class="yellow-lte-circle"></div>
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                    <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                    951</h4>
+                                                                    <img class="" src="assets/img/3-star.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-3 mt-lg-4 mt-md-4 mt-0">
+                                                            <div class="row">
+                                                                <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                    <div class="pink-lte-circle"></div>
+                                                                </div>
+                                                                <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                    <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                    157</h4>
+                                                                    <img class="" src="assets/img/2-star.png">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-3 mt-lg-4 mt-md-4 mt-2">
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-md-2 col-2 pt-2">
+                                                                <div class="green-lte-circle"></div>
+                                                            </div>
+                                                            <div class="col-lg-9 col-md-10 col-10 p-lg-0">     
+                                                                <h4 class="fs-18 hotel-rating text-black mb-0 font-w600">
+                                                                345</h4>
+                                                                <img class="" src="assets/img/1-star.png">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </div>                                                    
+                                                </div> 
+                                            </div>
+                                             <div class="col-lg-6 col-md-6 col-sm-12 col-6 p-sm-0 m-sm-0">
+                                                <div id="CategorySaleDonatChart"></div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-lg-4 col-md-6 col-6">
+                                <div class="card hotel-sal-count umrah-sect p-4">
+                                    <div class="d-flex align-items-end">
+                                        <div>
+                                        <p class="title fs-14 mb-1">Visitor</p>
+                                            <span class="fs-35 text-black font-w600">93
+                                                <svg class="ml-1" width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.00401 11.1924C0.222201 11.1924 -0.670134 9.0381 0.589795 7.77817L7.78218 0.585786C8.56323 -0.195262 9.82956 -0.195262 10.6106 0.585786L17.803 7.77817C19.0629 9.0381 18.1706 11.1924 16.3888 11.1924H2.00401Z" fill="#33C25B"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <canvas class="lineChart" id="chart_widget_2" height="85"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-6">
+                                <div class="card hotel-sal-count umrah-sect p-4">
+                                    <div class="d-flex align-items-end">
+                                        <div>
+                                        <p class="title fs-14 mb-1">Booking</p>
+                                            <span class="fs-35 text-black font-w600">56
+                                                <svg class="ml-1" width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.00401 11.1924C0.222201 11.1924 -0.670134 9.0381 0.589795 7.77817L7.78218 0.585786C8.56323 -0.195262 9.82956 -0.195262 10.6106 0.585786L17.803 7.77817C19.0629 9.0381 18.1706 11.1924 16.3888 11.1924H2.00401Z" fill="#f12e55"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <canvas class="lineChart" id="chart_widget_2" height="85"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-12 mt-lg-0 mt-md-5 mt-5">
+                                <div class="card hotel-sal-count umrah-sect p-4">
+                                    <div class="d-flex align-items-end">
+                                        <div>
+                                        <p class="title fs-14 mb-1">Refund / Cancel</p>
+                                            <span class="fs-35 text-black font-w600">93
+                                                <svg class="ml-1" width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.00401 11.1924C0.222201 11.1924 -0.670134 9.0381 0.589795 7.77817L7.78218 0.585786C8.56323 -0.195262 9.82956 -0.195262 10.6106 0.585786L17.803 7.77817C19.0629 9.0381 18.1706 11.1924 16.3888 11.1924H2.00401Z" fill="#f99f4b"/>
+                                                </svg>
+                                            </span>
+                                            <span class="fs-35 text-black font-w600">93
+                                                <svg class="ml-1" width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.00401 11.1924C0.222201 11.1924 -0.670134 9.0381 0.589795 7.77817L7.78218 0.585786C8.56323 -0.195262 9.82956 -0.195262 10.6106 0.585786L17.803 7.77817C19.0629 9.0381 18.1706 11.1924 16.3888 11.1924H2.00401Z" fill="#f99f4b"/>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <canvas class="lineChart" id="chart_widget_2" height="85"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-title pb-3 pt-5">Tourism</div>
+                        <div class="row card-group-row mt-5 mb-5">
+                            <div class="col-lg-6 col-md-6 col-12 card-group-row__col">
+                                <div class="card card-group-row__card hotel-sal-count">
+                                    <div class="row p-4">
+                                            <div class="col-lg-8 col-md-8 col-6">
+                                                <div class="title">Country Wise</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-block ">
+                                            <div id="revenue-chart" style="height:345px" class="chart-shadow"></div>
+                                        </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 mt-lg-0 mt-md-0 mt-5">
+                                <div class="p-2 hotel-sal-count">
+                                        <div class="row p-4">
+                                            <div class="col-lg-8 col-md-8 col-6">
+                                                <div class="title">Category Wise</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-block">
+                                            <div id="data-use-chart" style="height:245px"></div>
+                                        </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="sub-title pb-3 pt-5">Transport</div>
+                        <div class="row card-group-row mt-5 mb-5">
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div id="apexspark1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div id="apexspark2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div id="apexspark3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-title pb-3 pt-5">Visitor</div>
+                        <div class="row card-group-row mt-5 mb-5">
+                            <div class="col-lg-6 col-md-6 col-12 card-group-row__col">
+                                <div class="card card-group-row__card hotel-sal-count">
+                                <div class="card-body">
+                                    <div class="title">Daily Wise Visitor</div>
+                                    <div id="mytask-layout" class="theme-indigo">
+                                        <div class="card-body">
+                                            <div id="apex-timeline"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 card-group-row__col">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg">
+                                <div class="row card-group-row">
+                                    <div class="col-lg-3 card-group-row__col">
+                                        <div class="card card-group-row__card card-body card-body-x-lg" style="position: relative; padding-bottom: calc(80px - 1.25rem); overflow: hidden; z-index: 0;">
+                                            <div class="card-header__title frush-sub-title mb-2">Total Visitor</div>
+                                            <div class="text-amount">&dollar;8,391</div>
+                                            <div class="text-stats text-success">31.5% <i class="material-icons">arrow_upward</i></div>
+                                            <div class="chart" style="height: 80px; position: absolute; left: 0; right: 0; bottom: 0;">
+                                                <canvas id="productsChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 card-group-row__col">
+                                        <div class="card card-group-row__card card-body card-body-x-lg" style="position: relative; padding-bottom: calc(80px - 1.25rem); overflow: hidden; z-index: 0;">
+                                            <div class="card-header__title frush-sub-title mb-2">Unique Visitor</div>
+                                            <div class="text-amount">15,021</div>
+                                            <div class="text-stats text-danger">31.5% <i class="material-icons">arrow_downward</i></div>
+                                            <div class="chart" style="height: 80px; position: absolute; left: 0; right: 0; bottom: 0;">
+                                                <canvas id="coursesChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 card-group-row__col">
+                                        <div class="card card-group-row__card card-body card-body-x-lg" style="position: relative; padding-bottom: calc(80px - 1.25rem); overflow: hidden; z-index: 0;">
+                                            <div class="card-header__title frush-sub-title mb-2">Old Visitor</div>
+                                            <div class="text-amount">&dollar;8,391</div>
+                                            <div class="text-stats text-success">31.5% <i class="material-icons">arrow_upward</i></div>
+                                            <div class="chart" style="height: 80px; position: absolute; left: 0; right: 0; bottom: 0;">
+                                                <canvas id="productsChart-1"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 card-group-row__col">
+                                        <div class="card card-group-row__card card-body card-body-x-lg" style="position: relative; padding-bottom: calc(80px - 1.25rem); overflow: hidden; z-index: 0;">
+                                            <div class="card-header__title frush-sub-title mb-2">Confirm Visitor</div>
+                                            <div class="text-amount">15,021</div>
+                                            <div class="text-stats text-danger">31.5% <i class="material-icons">arrow_downward</i></div>
+                                            <div class="chart" style="height: 80px; position: absolute; left: 0; right: 0; bottom: 0;">
+                                                <canvas id="coursesChar-1"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <!--  END CONTENT AREA  -->
+</div>
+<!-- END MAIN CONTAINER -->
+
+
+
+
+<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+<script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        App.init();
+    });
+</script>
+<script src="assets/js/custom.js"></script>
+<!-- END GLOBAL MANDATORY SCRIPTS -->
+<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+<script src="plugins/apex/apexcharts.min.js"></script>
+<script src="assets/js/widgets/modules-widgets.js"></script>
+<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+
+<script src="assets/js/dashboard-charts.js"></script>
+
+
+<!-- HOTEL WISE GRAPH JS -->
+    <!-- App Settings (safe to remove) -->
+    <script src="assets/js/hotel-sale-wise-graph/app-settings.js"></script>
+
+    <!-- Global Settings -->
+    <script src="assets/js/hotel-sale-wise-graph/settings.js"></script>
+
+    <!-- Chart.js -->
+    <script src="assets/vendor/Chart.min.js"></script>
+
+    <!-- App Charts JS -->
+    <script src="assets/js/hotel-sale-wise-graph/chartjs-rounded-bar.js"></script>
+    <script src="assets/js/hotel-sale-wise-graph/charts.js"></script>
+
+    <!-- Chart Samples -->
+    <script src="assets/js/hotel-sale-wise-graph/page.dashboard.js"></script>
+
+    <!-- Chart.js -->
+    <script src="assets/vendor/Chart.min.js"></script>
+<!--END HOTEL WISE GRAPH JS -->
+
+
+<!-- START HOTEL YEAR WISE GRAPH JS -->
+    <!-- amchart js -->
+    <script src="assets/pages/widget/amchart/amcharts.js"></script>
+    <script src="assets/pages/widget/amchart/serial.js"></script>
+    <script src="assets/pages/widget/amchart/light.js"></script>
+    <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.min.js"></script>
+<!-- END HOTEL YEAR WISE GRAPH JS -->
+
+
+
+<!-- START HOTEL CATEGORY WISE GRAPH JS -->
+
+    <!-- Required vendors -->
+    <script src="assets/vendor/catogry-wise-graph/global.min.js"></script>
+    <script src="assets/vendor/catogry-wise-graph/bootstrap-select.min.js"></script>
+    <script src="assets/vendor/catogry-wise-graph/Chart.bundle.min.js"></script>
+    <script src="assets/vendor/catogry-wise-graph/custom.min.js"></script>
+        <!-- Apex Chart -->
+    <script src="assets/vendor/catogry-wise-graph/apexchart.js"></script>
+        <!-- Dashboard 1 -->
+<!-- END HOTEL CATEGORY WISE GRAPH JS -->
+
+<!-- Start main farrush umrah dashbaord -->
+    <!--<script src="assets/js/main-dashboard/chartist.bundle.js"></script>
+    <script src="assets/js/main-dashboard/mainscripts.bundle.js"></script>
+    <script src="assets/js/main-dashboard/index.js"></script>
+    <script src="assets/js/main-dashboard/vendorscripts.bundle.js"></script>
+    <script src="assets/js/main-dashboard/libscripts.bundle.js"></script>-->
+
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+    <script src="assets/bundles/vendorscripts.bundle.js"></script>
+    <script src="assets/bundles/chartist.bundle.js"></script>
+    <script src="assets/bundles/knob.bundle.js"></script> <!-- Jquery Knob-->
+    <script src="assets/bundles/mainscripts.bundle.js"></script>
+    <script src="assets/js/index.js"></script>
+
+    <!-- START HOTEL VISITOR HOTELCATEGORY WISE GRAPH JS 
+    <script src="assets/bundles/global.min.js"></script>
+    <script src="assets/js/custom.min.js"></script> -->
+
+    <script src="assets/bundles/Chart.bundle.min.js"></script>
+    <script src="assets/bundles/dashboard-1.js"></script>
+    <script src="assets/bundles/jquery.peity.min.js"></script>
+
+    <!-- END HOTEL VISITOR HOTELCATEGORY WISE GRAPH JS -->
+
+    <!-- Total Visitor, Uniquer Visitor. Old Visitor, Confirm Visitor JS 
+
+    <script src="assets/vendor/dom-factory.js"></script>
+    <script src="assets/vendor/material-design-kit.js"></script>
+    <script src="assets/vendor/Chart.min.js"></script>  
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/settings.js"></script>    
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/page.dashboard.js"></script>-->
+
+    <!-- Total Visitor, Uniquer Visitor. Old Visitor, Confirm Visitor JS END-->
+
+    <!-- START DIALY WISE VISITOR  GRAPH JS -->
+    <script src="assets/bundles/apexcharts.bundle.js"></script>
+    <script src="assets/bundles/index.js"></script>
+    <!-- END DIALY WISE VISITOR  GRAPH JS -->
+
+    <!-- START TRANSPORT SECT VISITOR,BOOKING,CANCEL BOOKING GRAPH JS -->
+    <script src="assets/bundles/chart-apex.js"></script>
+    <!-- END TRANSPORT SECT VISITOR,BOOKING,CANCEL BOOKING GRAPH JS -->
+
+
+
+
+<script src="assets/js/chart.js"></script>
+<script src="assets/js/chart.extension.js"></script>
+<script src="assets/js/bar-chart.js"></script>
+
+<script type="text/javascript">
+
+    (function($) {
+        /* "use strict" */
+
+     var dzChartlist = function(){
+        let draw = Chart.controllers.line.__super__.draw; //draw shadow
+        var screenWidth = $(window).width();
+        var CategorySaleDonatChart = function(){
+            var options = {
+              series: [20, 15, 25,25,15],
+              chart: {
+              type: 'donut',
+            },
+              legend:{
+                show:false  
+              },
+              plotOptions: {
+                 pie: {
+                    startAngle: -86,
+                    donut: {
+                         size: '40%',
+                    }
+                 },
+              },
+              stroke:{
+                width:'10' 
+              },
+              dataLabels: {
+                  formatter(val, opts) {
+                    const name = opts.w.globals.labels[opts.seriesIndex]
+                    return [ val.toFixed() + '%']
+                  },
+                  dropShadow: {
+                    enabled: false
+                  },
+                  style: {
+                    fontSize: '14px',
+                    colors: ["#fff"],
+                  }
+                },
+              colors:['#58c0ea','#f6d35f','#7c27fd','#0a930a','#f75e5f'],
+             responsive: [{
+              breakpoint: 480,
+              options: {
+                chart: {
+                  width: 200
+                },
+                legend: {
+                    show:false,
+                  position: 'bottom'
+                }
+              }
+            }] 
+            };
+
+            var chart = new ApexCharts(document.querySelector("#CategorySaleDonatChart"), options);
+            chart.render();
+        }
+        
+        
+        
+        /* Function ============ */
+            return {
+                init:function(){
+                },
+                
+                
+                load:function(){
+                    CategorySaleDonatChart();
+                },
+                
+                resize:function(){
+                    
+                }
+            }
+        
+        }();
+
+        jQuery(document).ready(function(){
+        });
+            
+        jQuery(window).on('load',function(){
+            setTimeout(function(){
+                dzChartlist.load();
+            }, 1000); 
+            
+        });
+
+        jQuery(window).on('resize',function(){
+            
+            
+        });     
+
+    })(jQuery);
+
+    </script>
+
+
+</body>
+</html>

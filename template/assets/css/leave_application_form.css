@@ -1,0 +1,89 @@
+#main_container_b2b {
+    background-image: url(../images/background_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: auto;
+
+}
+
+#main_header_logo {
+
+    background-color: #323338;
+    text-align: center;
+}
+
+.logo_header {
+    margin: 20px;
+}
+
+#signup_grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+#signup_from_grid {
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form_main_heading {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#LeaveApplicationForm .input_fields {
+    height: 40px;
+    border-radius: 5px;
+}
+
+#LeaveApplicationForm .label_heading {
+    color: #fff;
+}
+
+#LeaveApplicationForm .drop_down_box {
+    /*margin-top: 8%;*/
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#LeaveApplicationForm .upload_logo {
+    width: 44px;
+    display: block;
+}
+
+.image_logo_div {
+    display: ruby;
+}
+
+.logo_upload_head {
+    color: #fff;
+    font-weight: bold;
+}
+
+.attatcment_heading {
+    color: #fff;
+}
+
+.captcha_text {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    background-color: #c6813b;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+    border: none;
+}
+#LeaveApplicationForm .seperate_margin_top {
+    /*margin-top: 25px;*/
+}#LeaveApplicationForm .forget_password {
+    color: #fff;
+    float: right;
+    margin-bottom: 25px;
+}

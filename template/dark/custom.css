@@ -1,0 +1,78 @@
+.btn_customized {
+    background-color: #dda420;
+    border: #dda420;
+
+}
+
+.btn_customized:hover {
+    background-color: #dda420;
+
+}
+
+.chart-select {
+    font-size: 85%;
+    padding: 5px;
+    height: 33px;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.as-footer-container {
+    margin-top: 20px;
+}
+
+#coloredtext {
+    color: #DDA420;
+}
+
+.grid-img i {
+    color: red;
+    font-size: 22px;
+    position: relative;
+    float: right;
+}
+
+.grid-img {
+    width: 120px;
+    height: 100px;
+    background-size: cover;
+    float: left;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dt-filter-btn {
+    background-color: #dda420;
+    padding: 11px 16px;
+    text-shadow: none;
+    font-size: 16px;
+    color: #3b3f5c;
+    margin: 0 0 0 5px;
+    font-weight: lighter;
+}
+
+#status_row {
+    color: #dda420;
+}
+
+a {
+    cursor: pointer;
+}
+
+#agent_details label {
+    color: #dda420;
+}
+
+.transactions-list .btn {
+    padding: 2px 5px;
+}
+
+
+#CaptchaText {
+
+    float: right;
+    color: #dda420;
+}

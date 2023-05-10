@@ -1,0 +1,83 @@
+.umrah-sect .title{font-size: 18px!important;font-weight: 500;color: #939497;}
+.fs-35 {
+    font-size: 35px !important;
+    line-height: 1.25; }
+.frush-sub-title{color: black;
+    font-size: 18px;
+    font-weight: 600;}
+
+.text-black {
+    color: #000 !important;
+}
+.font-w600 {
+    font-weight: 600;
+}
+
+.lineChart {
+    max-width: 50%;
+    margin-left: auto;
+    max-height: 85px;}
+.stat-item .sub-text{font-size: 14px;font-weight: bold!important;color: black;}
+.blue-clr-bar{width: 20px; height: 7px; background: #55c1e8; border-radius: 50px; margin: auto;}
+.purple-clr-bar{width: 20px; height: 7px; background: #3a3eb7; border-radius: 50px; margin: auto;}
+.orange-clr-bar{width: 20px; height: 7px; background: #f86553; border-radius: 50px; margin: auto;}
+.yellow-clr-bar{width: 20px; height: 7px; background: #fbe70a; border-radius: 50px;  margin: auto;}
+.green-clr-bar{width: 20px; height: 7px; background: #04bb08; border-radius: 50px;  margin: auto;}
+.w-info-green b span{float: right; color: #51b0a3;}
+.w-info-purple b span{float: right; color: black;font-size: 18px;font-weight: 500;}
+.w-info-orange b span{float: right; color: #f17d2f;}
+.mt-top{margin-top: -30px!important;}
+#apex-circle-chart-multiple{margin: auto;}
+.for-color{color: #5d5a6b!important;}
+.for-count-purp{background-image: linear-gradient(to right, #a2a0fb 0%, #a2a0fb 100%)!important;}
+.for-count-green{background-image: linear-gradient(to right, #5ce19e 0%, #5ce19e 100%)!important;}
+.for-count-pink{background-image: linear-gradient(to right, #ff5858 0%, #ff5858 100%)!important;}
+.for-count-yellow{background-image: linear-gradient(to right, #f9c13c 0%, #f9c13c 100%)!important;}
+.for-count-orange{background-image: linear-gradient(to right, #f99f4a 0%, #f99f4a 100%)!important;}
+.for-count-blue{background-image: linear-gradient(to right, #4396fa 0%, #4396fa 100%)!important;}
+.bar-set{height: 5px!important;border-radius: 30px!important;background-color: #f7dddd!important;}
+.for-margin{margin-bottom: 0px!important;}
+.count-name{font-size: 12px;font-weight: 400!important;}
+.airline-det{border: solid 1px #e5e5e5;border-radius: 10px;}
+.airline-det .count-name{color: black;}
+.tick-info{background: #f6f6f6;}
+.tick-info .count-name{color: black;font-size: 12px;font-weight: 600!important;}
+.tick-info .count-name span{color: #b3b3b3;font-size: 12px;font-weight: 400!important;}
+.tick-info  .sub-title{font-size: 14px;}
+.tick-info  .sub-txt{font-size: 10px;margin-top: -11px;color: #bbbbbb;}
+
+.vehi-info-green{color: #7cb31a;font-size: 18px;font-weight: 400;}
+.vehi-info-green .green-dot{border-radius:25px; width: 10px; background: #7cb31a; height: 10px;}
+.vehi-info-green .vehi-text{line-height: 25px;}
+.vehi-info-green .vehi-text strong{color: #000; display: block;}
+
+.vehi-info-blue{color: #01a1ff;font-size: 18px;font-weight: 400;}
+.vehi-info-blue .green-dot{border-radius:25px; width: 10px; background: #01a1ff; height: 10px;}
+.vehi-info-blue .vehi-text{line-height: 25px;}
+.vehi-info-blue .vehi-text strong{color: #000; display: block;}
+
+.vehi-info-yellow{color: #fec107;font-size: 18px;font-weight: 400;}
+.vehi-info-yellow .green-dot{border-radius:25px; width: 10px; background: #fec107; height: 10px;}
+.vehi-info-yellow .vehi-text{line-height: 25px;}
+.vehi-info-yellow .vehi-text strong{color: #000; display: block;}
+
+.vehi-info-orange{color: #fe9903;font-size: 18px;font-weight: 400;}
+.vehi-info-orange .green-dot{border-radius:25px; width: 10px; background: #fe9903; height: 10px;}
+.vehi-info-orange .vehi-text{line-height: 25px;}
+.vehi-info-orange .vehi-text strong{color: #000; display: block;}
+
+.vehi-info-red{color: #d61900;font-size: 18px;font-weight: 400;}
+.vehi-info-red .green-dot{border-radius:25px; width: 10px; background: #d61900; height: 10px;}
+.vehi-info-red .vehi-text{line-height: 25px;}
+.vehi-info-red .vehi-text strong{color: #000; display: block;}
+.umrah-sect b{color: black;font-size: 14px;font-weight: 300;}
+.umrah-sect h3{font-size: 24px!important;}
+.for-height{height: 379px;}
+.fr-mrg{margin-top: -54px!important;}
+
+
+
+@media (max-width: 767px) {
+    .for-height{height: 428px!important;}
+    .fr-mrg{margin-top: -168px!important;}
+}
