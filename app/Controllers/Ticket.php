@@ -69,16 +69,14 @@ class Ticket extends BaseController
             $agentname = $this->request->getVar('agent_name');
             $email = $this->request->getVar('email');
 
-            $rest_api_base_url = 'http://127.0.0.1:8000/api';
             $get_endpoint = '/booking/all?agent_name='.$agentname.'&email='.$email;
-            $response = perform_http_request('GET', $rest_api_base_url . $get_endpoint);
+            $response = perform_http_request('GET', $get_endpoint);
             
             $data['bookings'] = json_decode($response['body']);
         }else{
-            $rest_api_base_url = 'http://127.0.0.1:8000/api';
             $get_endpoint = '/booking/all';
             
-            $response = perform_http_request('GET', $rest_api_base_url . $get_endpoint);
+            $response = perform_http_request('GET', $get_endpoint);
             
             $data['bookings'] = json_decode($response['body']);
         }

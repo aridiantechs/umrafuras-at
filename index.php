@@ -52,14 +52,22 @@ if ($_SERVER["HTTP_HOST"] == "localhost") {
     define('TEMPLATE', 'http://shaheryar-lala/umrahfuras.com/dashboard/template/');
     define('PATH', 'http://shaheryar-lala/umrahfuras.com/dashboard/');
     define('DBDNS', 'postgresql://postgres:aBv3MK3FpKc6e@161.97.85.3:5432/umrahfuras_maindb');
+    define('RESTAPI_URL','http://162.245.237.138/api/');
 }else if ($_SERVER["HTTP_HOST"] == "umrahfuras.test") {
     define('TEMPLATE', 'https://umrahfuras.test/dashboard/template/');
     define('PATH', 'https://umrahfuras.test/dashboard/');
     define('DBDNS', 'postgresql://umrahfuras:](UT-0k}6tEC@111.68.99.227:5432/umrahfuras_maindb');
+    define('RESTAPI_URL','http://162.245.237.138/api/');
+}else if ($_SERVER["HTTP_HOST"] == "ping.tripplanner.ae") {
+    define('TEMPLATE', 'http://ping.tripplanner.ae/template/');
+    define('PATH', 'http://ping.tripplanner.ae/');
+    define('DBDNS', 'postgresql://umrahfuras:](UT-0k}6tEC@127.0.0.1:5432/umrahfuras_maindb');
+    define('RESTAPI_URL','http://162.245.237.138/api/');
 } else {
     define('TEMPLATE', $protocol . '://' . $_SERVER["HTTP_HOST"] . '/template/');
     define('PATH', $protocol . '://' . $_SERVER["HTTP_HOST"] . '/');
     define('DBDNS', 'postgresql://umrahfuras:](UT-0k}6tEC@127.0.0.1:5432/umrahfuras_maindb');
+    define('RESTAPI_URL','http://162.245.237.138/api/');
     //define('DBDNS', 'postgresql://umrahfuras:](UT-0k}6tEC@111.68.99.227:5432/umrahfuras_maindb'); /// Barani Uni Server
 }
 

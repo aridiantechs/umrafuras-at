@@ -828,9 +828,8 @@ class Home extends BaseController
         $data = $this->data;
 
         helper(['curl']);
-		$rest_api_base_url = 'http://127.0.0.1:8000/api';
 		$post_endpoint = '/inbox/getdata?email='.$userprofile['Email'];
-		$response = perform_http_request('GET', $rest_api_base_url . $post_endpoint);
+		$response = perform_http_request('GET', $post_endpoint);
 		
 
 		$inbox = json_decode($response['body']);
@@ -874,9 +873,8 @@ class Home extends BaseController
         );
 
         helper(['curl']);
-		$rest_api_base_url = 'http://127.0.0.1:8000/api';
 		$post_endpoint = '/inbox/save';
-		$response = perform_http_request('POST', $rest_api_base_url . $post_endpoint , $data);
+		$response = perform_http_request('POST', $post_endpoint , $data);
 		
 
 		$data = json_decode($response['body']);
@@ -903,9 +901,8 @@ class Home extends BaseController
 
             if(count($data) > 0){
                 helper(['curl']);
-                $rest_api_base_url = 'http://127.0.0.1:8000/api';
                 $post_endpoint = '/inbox/delete';
-                $response = perform_http_request('POST', $rest_api_base_url . $post_endpoint , $data);
+                $response = perform_http_request('POST', $post_endpoint , $data);
                 
         
                 $data = json_decode($response['body']);

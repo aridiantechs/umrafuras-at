@@ -4,6 +4,8 @@ use Stripe\Issuing\Authorization;
 
 function perform_http_request($method, $url, $data = false) {
     $authtoken = "Authorization: Bearer 1|ZjhG9R3qjjpXk7EoburlH1OxYAWzFvU4NpjsUyoe";
+    $rest_api_base_url = RESTAPI_URL;
+    $url = $rest_api_base_url.$url;
     $curl = curl_init();
 
     switch ($method) {
