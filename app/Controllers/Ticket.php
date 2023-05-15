@@ -11,6 +11,7 @@ class Ticket extends BaseController
 {
     var $data = array();
     var $MainModel;
+    var $helpers = ['Curl_Helper'];
 
     public function __construct()
     {

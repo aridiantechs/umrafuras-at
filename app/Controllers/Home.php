@@ -26,7 +26,7 @@ class Home extends BaseController
 
     var $MainModel;
     var $validation;
-    var $helpers = ['url', 'form' , 'user_agent'];
+    var $helpers = ['url', 'form' , 'user_agent','Curl_Helper'];
 
     public function __construct()
     {
