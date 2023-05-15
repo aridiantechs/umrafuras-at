@@ -37,7 +37,10 @@ if (isset($_SERVER["HTTP_HOST"]) && $_SERVER["HTTP_HOST"] != 'localhost') {
 if ($_SERVER["HTTP_HOST"] == "localhost") {
     define('TEMPLATE', 'http://localhost/umrahfurasAT/template/');
     define('PATH', 'http://localhost/umrahfurasAT/');
-    define('DBDNS', 'postgresql://umrahfuras:root@127.0.0.1:5432/umrahfuras_maindb');
+    // define('DBDNS', 'postgresql://umrahfuras:root@127.0.0.1:5432/umrahfuras_maindb');
+    define('DBDNS', 'postgresql://umrahfuras:](UT-0k}6tEC@162.245.237.138:5432/umrahfuras_maindb');
+    define('RESTAPI_URL','http://162.245.237.138/api/');
+    
     //define('DBDNS', 'postgresql://umrahfuras:](UT-0k}6tEC@173.249.41.108:5432/umrahfuras_maindb');
 
 

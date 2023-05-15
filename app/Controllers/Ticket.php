@@ -60,7 +60,7 @@ class Ticket extends BaseController
     public function bookings()
     {
         $data = $this->data;
-        helper(['curl']);
+        helper(['curl','Curl_Helper']);
         // echo('<pre>');
         // print_r($this->request->getVar('agent_name'));
         // print_r($this->request->getMethod());
