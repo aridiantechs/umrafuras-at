@@ -11,7 +11,7 @@ class Ticket extends BaseController
 {
     var $data = array();
     var $MainModel;
-    var $helpers = ['Curl_Helper'];
+    var $helpers = ['curl'];
 
     public function __construct()
     {
@@ -61,7 +61,7 @@ class Ticket extends BaseController
     public function bookings()
     {
         $data = $this->data;
-        helper(['curl','Curl_Helper']);
+        helper(['curl']);
         // echo('<pre>');
         // print_r($this->request->getVar('agent_name'));
         // print_r($this->request->getMethod());

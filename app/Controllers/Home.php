@@ -26,7 +26,7 @@ class Home extends BaseController
 
     var $MainModel;
     var $validation;
-    var $helpers = ['url', 'form' , 'user_agent','Curl_Helper'];
+    var $helpers = ['url', 'form' , 'user_agent','curl'];
 
     public function __construct()
     {
@@ -827,7 +827,7 @@ class Home extends BaseController
         $userprofile = session()->get('profile');
         $data = $this->data;
 
-        helper(['curl','Curl_Helper']);
+        helper(['curl']);
 		$post_endpoint = '/inbox/getdata?email='.$userprofile['Email'];
 		$response = perform_http_request('GET', $post_endpoint);
 		
@@ -872,7 +872,7 @@ class Home extends BaseController
             'website' => 'umrahfuras.com',
         );
 
-        helper(['curl','Curl_Helper']);
+        helper(['curl']);
 		$post_endpoint = '/inbox/save';
 		$response = perform_http_request('POST', $post_endpoint , $data);
 		
@@ -900,7 +900,7 @@ class Home extends BaseController
             }
 
             if(count($data) > 0){
-                helper(['curl','Curl_Helper']);
+                helper(['curl']);
                 $post_endpoint = '/inbox/delete';
                 $response = perform_http_request('POST', $post_endpoint , $data);
                 
